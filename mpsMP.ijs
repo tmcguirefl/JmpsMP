@@ -12,7 +12,7 @@ testMPinit =: 3 : 0
 testMP =: 3 : 0  
 testMPinit 0
 
-smoutput 'Regular J matrix product
+smoutput 'Regular J matrix product'
 smoutput 10{. , A +/ . * B
 smoutput ''
 smoutput 'Now with Apple Metal Performance Shader API'
