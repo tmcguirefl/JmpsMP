@@ -4,9 +4,10 @@ require 'dll'
 mpsMP =: '/Applications/j9.6/addons/tmcguirefl/mpsMP/lib/libmpsMP.dylib mpsMP i i i i i i i *f *f *f'
 
 testMPinit =: 3 : 0
+ fmakex '/Applications/j9.6/addons/tmcguirefl/mpsMP/lib/libmpsMP.dylib'
  A =: 3000 4000?.@$0
-  B =: 4000 2000?.@$0
-  C =: 3000 2000 $0
+ B =: 4000 2000?.@$0
+ C =: 3000 2000 $0
 )
 
 testMP =: 3 : 0  
@@ -21,5 +22,6 @@ smoutput 10{.>9{result
 smoutput ''
 NB. timing results
 smoutput 'Standard J MP : ',":timespacex '10{. , A +/ . * B'
-smoutput 'MPS MP        :',":timespacex 'result =: mpsMP cd (;/$A),(;/$B),(;/$C),(<,A),(<,B),(<,C)'
+smoutput 'MPS MP        : ',":timespacex 'result =: mpsMP cd (;/$A),(;/$B),(;/$C),(<,A),(<,B),(<,C)'
 )
+
