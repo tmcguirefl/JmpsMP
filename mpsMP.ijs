@@ -1,7 +1,7 @@
 NB. mpsmp.ijs - demonstration program for metal performance shader matrix multiplication
 NB.
 require 'dll'
-mpsMP =: '/Applications/j9.6/addons/tmcguirefl/mspMP/lib/libmpsMP.dylib mpsMP i i i i i i i *f *f *f'
+mpsMP =: '/Applications/j9.6/addons/tmcguirefl/mpsMP/lib/libmpsMP.dylib mpsMP i i i i i i i *f *f *f'
 
 testMPinit =: 3 : 0
  A =: 3000 4000?.@$0
