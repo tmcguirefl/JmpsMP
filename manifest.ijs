@@ -14,6 +14,7 @@ VERSION=: '1.0.1'
 FILES=: 0 : 0
 mpsMP.ijs
 lib/
+lib/libmpsMP.dylib
 )
 
 PLATFORM=: 'darwin'
