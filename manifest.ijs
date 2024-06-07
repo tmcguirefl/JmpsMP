@@ -9,7 +9,7 @@ limited to matrices 8000x8000 or less
 See wiki page: no wiki page
 )
 
-VERSION=: '1.0.1'
+VERSION=: '1.0.2'
 
 FILES=: 0 : 0
 mpsMP.ijs
@@ -17,7 +17,7 @@ lib/
 lib/libmpsMP.dylib
 )
 
-PLATFORM=: 'darwin'
+PLATFORMS=: 'darwin'
 
 RELEASE=: 'j9.6'
 
